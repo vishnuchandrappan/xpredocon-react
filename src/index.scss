@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 * {
   margin: 0;
@@ -173,4 +174,38 @@ a:hover {
 p {
   margin: 10px 0px;
   text-align: justify;
+}
+
+.main{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  border: solid 2px crimson;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buttons{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  padding: 10px;
+  button{
+    background-color: #2f2f2f;
+    color: lavenderblush;
+  }
+}
+
+.bg{
+  position: absolute;
+  z-index: 10;
+  top:10vh;
+  left: 0;
+  height: 30vh;
+  background-image: url('https://cdn.openpr.com/S/1/S114723818_g.jpg');
 }
