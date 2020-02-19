@@ -49,6 +49,7 @@ nav ul li {
 .container {
   max-width: 50%;
   margin: 10px auto;
+  animation: fadeIn 0.3s ease-in;
 }
 
 span {
@@ -176,7 +177,7 @@ p {
   text-align: justify;
 }
 
-.main{
+.main {
   height: 90vh;
   width: 100vw;
   display: flex;
@@ -184,28 +185,68 @@ p {
   align-items: center;
 }
 
-input{
+input {
   border: solid 2px crimson;
   padding: 10px;
   border-radius: 5px;
 }
 
-.buttons{
+.buttons {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   padding: 10px;
-  button{
+  button {
     background-color: #2f2f2f;
     color: lavenderblush;
   }
 }
 
-.bg{
+.bg {
   position: absolute;
   z-index: 10;
-  top:10vh;
+  top: 10vh;
   left: 0;
   height: 30vh;
-  background-image: url('https://cdn.openpr.com/S/1/S114723818_g.jpg');
+  background-image: url("https://cdn.openpr.com/S/1/S114723818_g.jpg");
+}
+
+.app-form {
+}
+
+.form-group {
+  padding: 10px 0;
+  width: 100%;
+  input{
+    width: 100%;
+  }
+}
+
+.btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-1{
+  border: solid 2px crimson;
+  padding:5px 10px;
+  border-radius: 5px;
+  &:hover{
+    border-color: lavenderblush;
+    background-color: crimson !important;
+    color: lavenderblush;
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }

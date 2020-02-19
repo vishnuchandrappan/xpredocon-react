@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import About from "./pages/About";
+import Register from "./pages/Register";
+import ResetPassword from "./pages/ResetPassword";
 
 
 function App() {
@@ -12,8 +14,10 @@ function App() {
       <div className="App">
         <Navbar />
         <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/about" component={About} />
+        <Route path="/login" component={Login} />
+        <Route path="/about" component={About} />
+        <Route path="/register" component={Register} />
+        <Route path="/resetPassword" component={ResetPassword} />
       </div>
     </Router>
   );
