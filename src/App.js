@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import ResetPassword from "./pages/ResetPassword";
-
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/register" component={Register} />
         <Route path="/resetPassword" component={ResetPassword} />
+        <Route path="/me" component={Profile} />
       </div>
     </Router>
   );

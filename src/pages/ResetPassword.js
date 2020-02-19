@@ -23,7 +23,7 @@ export default function ResetPassword() {
           </div>
 
           <div className="form-group">
-            Login<Link to="/resetPassword"> Here</Link>
+            Login<Link to="/login"> Here</Link>
           </div>
         </form>
       </div>

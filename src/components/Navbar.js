@@ -11,7 +11,9 @@ export default class Navbar extends Component {
       <div className="navbar">
         <nav>
           <div className="logo">
-            <h1>XPREDOCON</h1>
+            <h1>
+              <Link to="/">XPREDOCON</Link>
+            </h1>
           </div>
           <div className="burger" onClick={this.navToggle}>
             <span></span>
@@ -23,7 +25,7 @@ export default class Navbar extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/register">Signup</Link>
             </li>
             <li>
               <Link to="/login">Login</Link>

@@ -58,7 +58,7 @@ span {
 
 button {
   border: none;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 input {
@@ -231,7 +231,6 @@ input {
 
 .btn-1{
   border: solid 2px crimson;
-  padding:5px 10px;
   border-radius: 5px;
   &:hover{
     border-color: lavenderblush;
@@ -248,5 +247,32 @@ input {
   to{
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+.container-full{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+  // grid-gap: 5px;
+  .user-card{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid 2px crimson;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .user-summary{
+    padding: 0 20px;
+    .summary-card{
+      margin: 10px 0;
+      box-shadow: 0px 2px 4px gray;
+      padding: 10px;
+    }
+  }
+  .user-options{
+    background-color: lavenderblush;
+    padding: 10px;
+    border-radius: 10px;
   }
 }
